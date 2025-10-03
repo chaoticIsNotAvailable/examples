@@ -1,0 +1,36 @@
+while True:
+    class Numbers():
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+
+        @classmethod
+        def metodp(self, x, y):
+            return(x +y )
+        @classmethod
+        def metodm(self, x, y):
+            return (x - y)
+
+        @classmethod
+        def metodu(self, x, y):
+            return (x * y)
+
+        @classmethod
+        def metodd(self, x, y):
+            return (x / y)
+        @classmethod
+        def metodk(self, x, y):
+            return (x ** y)
+
+    res = Numbers(int(input("first number")),int(input("second number")))
+    choice = int(input("1 - plus, 2 - minus, 3 - multiplication, 4 = division, 5 = degree"))
+    if choice == 1:
+        print(Numbers.metodp(res.x,res.y))
+    elif choice == 2:
+        print(Numbers.metodm(res.x,res.y))
+    elif choice == 3:
+        print(Numbers.metodu(res.x,res.y))
+    elif choice == 4:
+        print(Numbers.metodd(res.x,res.y))
+    elif choice == 5:
+        print(Numbers.metodk(res.x, res.y))
